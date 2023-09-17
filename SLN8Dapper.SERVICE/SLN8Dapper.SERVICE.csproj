@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SLN8Dapper.DATA\SLN8Dapper.DATA.csproj" />
+    <ProjectReference Include="..\SLN8Dapper.MODEL\SLN8Dapper.MODEL.csproj" />
+  </ItemGroup>
+
+</Project>
