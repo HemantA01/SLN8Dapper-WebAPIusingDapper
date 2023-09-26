@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConn")));
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IUserRegistration, UserRegistration>();
+builder.Services.AddScoped<ICountryMaster, CountryMaster>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
